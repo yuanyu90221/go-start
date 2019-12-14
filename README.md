@@ -15,3 +15,22 @@
         compile-binary-2*
     /pkg
         objects-to-be-linked
+
+# variable
+
+//  atomic data types
+string
+int
+int32
+int64
+uint
+uint32
+uint64
+
+// unsafe
+Pointer
+
+// abstract data types
+map[] <datatype>
+struct{}
+interface{}
