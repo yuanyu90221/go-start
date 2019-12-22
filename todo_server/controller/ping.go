@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func ping(w http.ResponseWriter, r *http.Request)) http.HandlerFunc {
+func ping() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodGet {
 			data := views.Response{
