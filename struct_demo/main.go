@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"./structs"
 )
-func UpdateEmployee(empDetails *structs.Employee) {
-	empDetails.Name ="Anshui"
+func UpdateEmployee(empDetails *structs.Employee, replaceName string) {
+	empDetails.Name = replaceName
 }
 
 func main() {
 	var newEmployee =  structs.Employee{Name:"Json", Age:11, Designation:"sty", Salary:500000 }
 	fmt.Println(newEmployee)
-	UpdateEmployee(&newEmployee);
+	UpdateEmployee(&newEmployee, "Jefery");
 	fmt.Println("new",newEmployee.Name)
 	newEmployee.ShowDetails()
 	var empEmployee = new(structs.Employee)
